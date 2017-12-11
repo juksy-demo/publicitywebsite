@@ -51,6 +51,19 @@
   42. scroll top
  ===============================================*/
 /*==============================================
+ New Add
+ ===============================================*/
+.featured-item .number svg{
+    width: 150px;
+    padding-bottom: 5px;
+}
+footer .footer-logo svg {
+    width: 195px;
+}
+footer .footer-logo svg .st0 {
+    fill: #fff;
+}
+/*==============================================
  Pre Loader
  ===============================================*/
 #tb-preloader {
@@ -99,7 +112,7 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 0;
-  color: #323232;
+  color: #222222;
   font-size: 15px;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -116,7 +129,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333;
+  color: #222222;
   line-height: 1.5;
   margin: 0 0 30px 0;
   font-weight: normal; }
@@ -181,7 +194,7 @@ pre {
   display: inline; }
 
 .bgblack {
-  background-color: black; }
+  background-color: #1a1a1a; }
 
 .colorgold {
   color: #d6b161; }
@@ -361,11 +374,14 @@ pre {
 .p-tb-200 {
   padding: 200px 0; }
 
-.p-top-0 {
-  padding-top: 0 !important; }
-
 .p-bot-0 {
   padding-bottom: 0 !important; }
+
+.p-bot-20 {
+  padding-bottom: 20px; } 
+
+.p-bot-40 {
+  padding-bottom: 40px; }  
 
 .p-bot-100 {
   padding-bottom: 100px !important; }
@@ -613,16 +629,48 @@ pre {
 .top-ads {
   float: right;
   margin-top: 10px; }
+.nopadding { padding: 0 !important; }
+.nomargin { margin: 0 !important; }
+.navlogo {
+  float: left;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  transition: height .3s, line-height .3s, margin .3s;
+}
 /*==============================================
  Logo set
  ===============================================*/
 nav a.juksy {
   display: block;
-  width: 220px;
+  width: 195px;
   float: left;
 }
 @media (max-width: 768px) {
   nav a.juksy { width: 120px; }
+}
+/*==============================================
+ Map
+ ===============================================*/
+@media screen and (min-width: 80em) {
+  #grey-map {
+      width: 720px;
+      margin: 0 auto 50px;
+  }
+}
+#grey-map {
+    overflow: hidden;
+    padding-bottom: calc(100% * 300 / 720);
+    position: relative;
+    height: 0;
+    margin-bottom: 10px;
+}
+#grey-map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 /*==============================================
  Navbar
@@ -2578,7 +2626,8 @@ body {
   overflow: hidden;
   text-align: center;
   width: 100%;
-  position: relative; }
+  position: relative;
+  background-color: #1a1a1a;}
 
 .video-overlay, .banner-overaly {
   position: absolute;
@@ -3576,7 +3625,7 @@ comments-list
   padding: 80px 0; }
 
 #footer.dark {
-  background: #222; }
+  background: #1a1a1a; }
 
 #footer.gray .sub-title {
   font-size: 12px;
@@ -3635,6 +3684,7 @@ comments-list
 
 #footer.dark .copyright {
   font-size: 14px;
+  line-height: 21px;
   color: #fff;
   letter-spacing: 2px; }
 

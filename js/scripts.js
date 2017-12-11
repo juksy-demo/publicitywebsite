@@ -84,7 +84,7 @@
             centerLogoStickyHeight = 60;
 
             if ($navbarSticky.hasClass("l-navbar_s-center")) {
-                $brandLogo.height(centerLogoNormalHeight);
+                $brandLogo.height(centerLogoNormalHeight);                
             }
             $navbarSticky.sticky({
                 className: "l-navbar-wrapper_has-sticky",

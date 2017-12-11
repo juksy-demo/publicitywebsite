@@ -370,7 +370,7 @@
 }
 
 .gray-bg {
-    background: #f6f6f6;
+    background: #f1f1f1;
 }
 
 .feature-bg-box,
@@ -1093,7 +1093,7 @@ dl.toggle.time-line:before {
 }
 
 .promo-box.dark-bg {
-    background: #222;
+    background: #1a1a1a;
 }
 
 .light-txt,
@@ -1392,10 +1392,6 @@ dl.toggle.time-line:before {
 .fun-factor.alt .fun-info:before {
     content: "";
     background: none;
-}
-
-.gray-bg {
-    background: #f5f5f5;
 }
 
 .gray-border-factor .fun-factor {
