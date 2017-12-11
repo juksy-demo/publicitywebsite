@@ -1,0 +1,47 @@
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<!-- js -->
+<script src="vendor/modernizr/modernizr.js"></script>
+<script src="vendor/jquery/jquery-1.10.2.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/bootstrap-validator/validator.min.js"></script>
+<script src="vendor/breakpoint/breakpoint.js"></script>
+<script src="vendor/count-to/jquery.countTo.js"></script>
+<script src="vendor/countdown/jquery.countdown.js"></script>
+<script src="vendor/easing/jquery.easing.1.3.js"></script>
+<script src="vendor/easy-pie-chart/jquery.easypiechart.min.js"></script>
+<script src="vendor/elasic-slider/jquery.eislideshow.js"></script>
+<script src="vendor/flex-slider/jquery.flexslider-min.js"></script>
+<script src="vendor/gmap/jquery.gmap.min.js"></script>
+<script src="vendor/images-loaded/imagesloaded.js"></script>
+<script src="vendor/isotope/jquery.isotope.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="vendor/mailchimp/jquery.ajaxchimp.min.js"></script>
+<script src="vendor/menuzord/menuzord.js"></script>
+<script src="vendor/nav/jquery.nav.js"></script>
+<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+<script src="vendor/parallax-js/parallax.min.js"></script>
+<script src="vendor/smooth/smooth.js"></script>
+<script src="vendor/sticky/jquery.sticky.min.js"></script>
+<script src="vendor/touchspin/touchspin.js"></script>
+<script src="vendor/typist/typist.js"></script>
+<script src="vendor/visible/visible.js"></script>
+<script src="vendor/wow/wow.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- <script src="js/app.min.js"></script> -->
+<script>
+	$(document).ready(function(){
+	    $("#grey-map").gMap({
+	        markers: [
+	            {
+	                latitude: 25.028793,
+	                longitude: 121.521381,
+	                html: '<div class="test_marker">marker 1</div>'
+
+	            }
+	        ],
+	        zoom: 17,
+	        styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
+	    })
+	});
+</script>

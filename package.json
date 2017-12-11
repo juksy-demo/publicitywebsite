@@ -1,0 +1,26 @@
+{
+  "name": "juksy-publicty",
+  "version": "1.0.0",
+  "description": "#",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-html-extend": "^1.1.6",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglifycss": "^1.0.6"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "clipboard": "^1.5.16",
+    "handlebars": "^4.0.6",
+    "jquery": "^3.1.1",
+    "jquery-touchswipe": "^1.6.15",
+    "jquery.dotdotdot": "^1.7.4",
+    "lightslider": "^1.1.6",
+    "lodash": "^4.17.4",
+    "photoswipe": "^4.1.1",
+    "wowjs": "^1.1.3"
+  }
+}
