@@ -45,7 +45,7 @@
          Smooth scroll init
          ===============================================*/
         if (typeof smoothScroll == "object") {
-            smoothScroll.init();
+            smoothScroll.init();            
         }
 
 
@@ -159,7 +159,7 @@
          Full screen banner init
          ===============================================*/
         $window.bind("resizeEnd", function () {
-            var mheight = $window.height() - $('header').height();
+            var mheight = $window.height();
             $("#fullscreen-banner").height(mheight);
             $(".video-wrap video").height(mheight);
         });
@@ -530,7 +530,7 @@
          Contact form
          ===============================================*/
         initMailer();
-
+        
     });
 
     function initMailer() {

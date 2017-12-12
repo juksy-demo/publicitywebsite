@@ -51,19 +51,6 @@
   42. scroll top
  ===============================================*/
 /*==============================================
- New Add
- ===============================================*/
-.featured-item .number svg{
-    width: 150px;
-    padding-bottom: 5px;
-}
-footer .footer-logo svg {
-    width: 195px;
-}
-footer .footer-logo svg .st0 {
-    fill: #fff;
-}
-/*==============================================
  Pre Loader
  ===============================================*/
 #tb-preloader {
@@ -110,7 +97,7 @@ footer .footer-logo svg .st0 {
  Base
  ===============================================*/
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
   line-height: 0;
   color: #222222;
   font-size: 15px;
@@ -623,6 +610,74 @@ pre {
   display: inline-block; }
 
 /*==============================================
+ New Add
+ ===============================================*/
+.featured-item .number svg{
+    width: 150px;
+    padding-bottom: 5px;
+}
+footer .footer-logo svg {
+    width: 195px;
+}
+footer .footer-logo svg .st0 {
+    fill: #fff;
+}
+.accordion dt .year, .accordion dt .info {
+    display: inline-block;
+    vertical-align: middle; }
+.accordion dt .year {
+  padding-right: 8px; }
+.accordion dt .info {
+    width: calc(100% - 50px); }
+
+.tabScroll>div {
+  background-color: #eeeeee;
+  width: 100%;
+  height: 400px;
+  border-radius: 16px;
+  position: relative;
+}
+.tabScroll>div:after {
+  content: '';
+  display: black;
+  background-color: #aaaaaa;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  position: absolute;
+  bottom: 10px;
+  margin: auto;
+  right: 0;
+  left: 0;
+}
+.tabScroll>div>div {
+  padding: 0 20px;
+  width: 100%;
+  height: calc(100% - 60px);
+  overflow: hidden;
+  position: absolute;
+  margin: auto;
+  top: 16px;
+  bottom: 44px;
+  left: 0;
+  right: 0;
+}
+@media (min-width: 992px) {
+  .tabScroll>div {
+    height: 600px; }
+}
+.tabScroll>div>div img{
+  animation-name: tabScroll;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction:alternate;
+}
+@keyframes tabScroll {
+    0%   {transform: translateY(0);}
+    100% {transform: translateY(-100%) translateY(560px);}
+}
+/*==============================================
  Header
  ===============================================*/
 /*top-ads*/
@@ -638,6 +693,9 @@ pre {
   height: 100px;
   transition: height .3s, line-height .3s, margin .3s;
 }
+.color-white {
+  color: #ffffff !important;
+}
 /*==============================================
  Logo set
  ===============================================*/
@@ -648,6 +706,7 @@ nav a.juksy {
 }
 @media (max-width: 768px) {
   nav a.juksy { width: 120px; }
+  .navlogo { height: 50px; }
 }
 /*==============================================
  Map
@@ -671,6 +730,10 @@ nav a.juksy {
     height: 100%;
     width: 100%;
     position: absolute;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
+    -webkit-backface-visibility: hidden;  /* Fix for transition flickering */
 }
 /*==============================================
  Navbar
@@ -1015,7 +1078,7 @@ nav a.juksy {
   .menuzord-menu .dropdown,
   .l-navbar-wrapper_has-sticky .l-navbar,
   .l-navbar_s-left {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 0 10px rgba(0,0,0,.2); }
   .logo-brand {
     height: 100px;
     display: inline-block; }
@@ -1053,7 +1116,7 @@ nav a.juksy {
   .logo-brand,
   .menuzord-menu > li > a {
     transition: height .3s, line-height .3s, margin .3s; }
-  .l-navbar_t-light {
+  .l-navbar-wrapper_has-sticky .l-navbar_t-light {
     background: #fff; }
   .l-navbar_t-dark {
     background: #0a0a0a; }
@@ -3976,6 +4039,15 @@ comments-list
   font-weight: normal;
   text-transform: uppercase;
   color: #7e7e7e; }
+
+address .tel, address .phone {
+  display: inline-block;
+  vertical-align: top;
+  color: #7e7e7e;
+}
+
+address .tel { 
+  padding-right: 4px; }
 
 address p {
   margin-bottom: 0px; }
