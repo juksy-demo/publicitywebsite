@@ -504,8 +504,15 @@
 
         var $liftOff = $(".js-lift-off");
         $window.on("scroll", function () {
-            if ($window.scrollTop() > 150) {
+            if ($window.scrollTop() > 400) {
                 $liftOff.addClass("lift-off_show").removeClass("lift-off_hide");
+
+                if( $window.scrollTop() > ($body.height() - $window.height() -160) ) {
+                   $liftOff.addClass("lift-off_white");
+                }else {
+                    $liftOff.removeClass("lift-off_white");
+                }
+
             } else {
                 $liftOff.addClass("lift-off_hide").removeClass("lift-off_show");
             }

@@ -668,9 +668,9 @@ footer .footer-logo svg .st0 {
 }
 .tabScroll>div>div img{
   animation-name: tabScroll;
-  animation-duration: 12s;
+  animation-duration: 24s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
+  animation-timing-function: linear;
   animation-direction:alternate;
 }
 @keyframes tabScroll {
@@ -2192,6 +2192,7 @@ body {
   font-size: 12px;
   text-transform: uppercase;
   /*font-family: 'Abel', sans-serif;*/
+  line-height: 1.5;
   font-weight: normal;
   letter-spacing: 1px;
   color: #7e7e7e; }
@@ -4685,7 +4686,9 @@ address p {
   visibility: hidden;
   opacity: 0;
   transform: translateY(40px); }
-
+.lift-off_white {
+  color: rgba(0, 0, 0, 0.6);
+  background: #fff; }
 /*==============================================
  Background Images
  ===============================================*/
