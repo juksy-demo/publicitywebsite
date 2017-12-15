@@ -630,6 +630,20 @@ footer .footer-logo svg .st0 {
 .accordion dt .info {
     width: calc(100% - 50px); }
 
+.we-txt>div {
+  font-size: 18px;
+}
+.we-txt h3 {
+  background: #d6b161;
+  color: #ffffff;
+  width: 200px;
+  margin: 0 auto;   
+}
+
+.core-txt-top {
+  padding-top: 120px;
+}
+
 .tabScroll>div {
   background-color: #eeeeee;
   width: 100%;
@@ -676,6 +690,101 @@ footer .footer-logo svg .st0 {
 @keyframes tabScroll {
     0%   {transform: translateY(0);}
     100% {transform: translateY(-100%) translateY(560px);}
+}
+/*==============================================
+ icon
+ ===============================================*/
+.icon-layers:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/01.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+.icon-computer:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/02.png");
+  background-size: cover;
+  width: 62px;
+  height: 50px;
+}
+.icon-database:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/03.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+.icon-linegraph:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/04.png");
+  background-size: cover;
+  width: 58px;
+  height: 50px;
+}
+.icon-05:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/05.png");
+  background-size: cover;
+  width: 51px;
+  height: 51px;
+}
+.icon-06:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/06.png");
+  background-size: cover;
+  width: 51px;
+  height: 51px;
+}
+.icon-07:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/07.png");
+  background-size: cover;
+  width: 60px;
+  height: 51px;
+}
+.icon-12:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/12.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.icon-13:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/13.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.icon-14:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/14.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.icon-15:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/15.png");
+  background-size: cover;
+  width: 60px;
+  height: 50px;
+  margin: 0 auto;
 }
 /*==============================================
  Header
@@ -2036,7 +2145,7 @@ body {
  Portfolio
  ===============================================*/
 .portfolio {
-  margin: 50px 0; }
+  margin: 20px 0; }
 
 .portfolio .portfolio-item {
   float: left; }
@@ -2067,8 +2176,8 @@ body {
   opacity: 1; }
 
 .portfolio-item:hover .portfolio-hover .portfolio-description {
-  bottom: 45%;
-  margin-bottom: -90px; }
+  bottom: 56px;
+  margin-bottom: 0px; }
 
 .portfolio-item:hover .portfolio-hover .action-btn {
   top: 40%;
@@ -2100,7 +2209,7 @@ body {
 
 .portfolio-description h4 {
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 4px; }
 
@@ -4672,6 +4781,7 @@ address p {
   bottom: 20px;
   width: 40px;
   height: 40px;
+  z-index: 2;
   line-height: 40px;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
@@ -4988,12 +5098,22 @@ Table of contents
     width: 50%; }
   .clients.grid-3 li, .clients.grid-4 li, .clients.grid-5 li, .clients.grid-6 li {
     width: 33.33%; }
+  .clients.grid-7 li {
+    width: 20%; }  
   .clients.angle-box.grid-2 li {
     width: 46%; }
   .clients.angle-box.grid-3 li, .clients.angle-box.grid-4 li, .clients.angle-box.grid-5 li, .clients.angle-box.grid-6 li {
     width: 29.33%; }
   .feature-bg-box {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; } 
+  
+  .marketing-item.col-md-2 {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+  }
+
+  }
 
 @media screen and (max-width: 800px) {
   /*portfolio   grid*/
@@ -5152,8 +5272,6 @@ Table of contents
     float: left; }
   .count-icon {
     right: 40px; }
-  .feature-bg-box {
-    margin-bottom: 50px !important; }
   .catering-form input,
   .catering-form button,
   .catering-form select {
@@ -5240,14 +5358,14 @@ Table of contents
   .featured-box .one-third {
     width: 100%; }
   .half-txt {
-    width: 80%; }
+    width: 80%; } 
   .icon-box-tabs .nav-pills > li + li {
     margin-left: 0; }
   .icon-box-tabs .nav-pills > li {
     margin-bottom: 10px;
     text-align: center; }
   .subscribe-info, .featured-item {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     display: inline-block;
     width: 100%; }
   .subscribe-form input, .subscribe-box.text-center .subscribe-form input {
@@ -5370,7 +5488,24 @@ Table of contents
     top: 45%;
     right: 0%;
     left: 0;
-    text-align: center; } }
+    text-align: center; }
+
+  .we-txt>div {
+    font-size: 16px;
+  }
+  .we-txt h3 {
+    width: 160px;
+  }
+
+  .core-txt-top {
+    padding-top: 0px;
+  }
+  
+  .marketing-title {
+    margin: 0;
+  }
+
+  }
 
 /* -------------------------------
    Phone
@@ -5413,6 +5548,8 @@ Table of contents
     width: 100%; }
   .clients.angle-box.grid-2 li, .clients.angle-box.grid-3 li, .clients.angle-box.grid-4 li, .clients.angle-box.grid-5 li, .clients.angle-box.grid-6 li {
     width: 96%; }
+  .clients.grid-7 li {
+    width: 33.3%; }  
   .error-avatar img {
     width: 100%;
     height: auto; }

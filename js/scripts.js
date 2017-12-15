@@ -45,7 +45,7 @@
          Smooth scroll init
          ===============================================*/
         if (typeof smoothScroll == "object") {
-            smoothScroll.init();            
+            smoothScroll.init();
         }
 
 
@@ -84,19 +84,21 @@
             centerLogoStickyHeight = 60;
 
             if ($navbarSticky.hasClass("l-navbar_s-center")) {
-                $brandLogo.height(centerLogoNormalHeight);                
+                $brandLogo.height(centerLogoNormalHeight);
             }
-            $navbarSticky.sticky({
-                className: "l-navbar-wrapper_has-sticky",
-                wrapperClassName: "l-navbar-wrapper",
-                zIndex: 10000,
-                bottomSpacing: 100
-            }).on("sticky-start", function() {
-                $navLogo.addClass("sticky-fix").height(centerLogoStickyHeight);
-            }).on("sticky-end", function () {
-                $navbarSticky.parent().height(navbarHeight);
-                $navLogo.addClass("sticky-fix").height(centerLogoNormalHeight);
-            });
+
+            if ( $window.width()> 768) {
+                $navbarSticky.sticky({
+                    className: "l-navbar-wrapper_has-sticky",
+                    wrapperClassName: "l-navbar-wrapper",
+                    zIndex: 10000,
+                    bottomSpacing: 100
+                }).on("sticky-start", function() {
+                    $navLogo.addClass("sticky-fix").height(centerLogoStickyHeight);
+                }).on("sticky-end", function () {
+                    $navLogo.addClass("sticky-fix").height(centerLogoNormalHeight);
+                });
+            }    
         }
         initSticky();
 
@@ -158,10 +160,16 @@
         /*==============================================
          Full screen banner init
          ===============================================*/
-        $window.bind("resizeEnd", function () {
+        function setvideoheight() {
             var mheight = $window.height();
             $("#fullscreen-banner").height(mheight);
             $(".video-wrap video").height(mheight);
+        }
+
+        setvideoheight();
+
+        $window.bind("resizeEnd", function () {
+            setvideoheight();
         });
 
         $window.resize(function () {
@@ -410,76 +418,60 @@
         /*==============================================
          Carousel init
          ===============================================*/
-        if ($.fn.owlCarousel) {
-            $("#clients-1").owlCarousel({
-                autoPlay: 3000, //Set AutoPlay to 3 seconds
-                items: 6,
-                itemsDesktop: [1199, 3],
-                itemsDesktopSmall: [979, 3]
+        if ($.fn.owlCarousel) {           
 
-            });
-
-            $("#testimonial-2").owlCarousel({
-                autoPlay: 3000, //Set AutoPlay to 3 seconds
-                items: 1
-            });
-
-            $("#testimonial-3").owlCarousel({
-                autoPlay: 4000, //Set AutoPlay to 3 seconds
-                items: 1
-            });
-
-            $("#testimonial-4").owlCarousel({
-                autoPlay: 3000, //Set AutoPlay to 3 seconds
-                items: 1
-            });
-
-            $("#testimonial-5").owlCarousel({
-                autoPlay: 3000, //Set AutoPlay to 3 seconds
-                items: 1
-            });
-
-            $("#carousel-object").owlCarousel({
-                autoPlay: 4000, //Set AutoPlay to 3 seconds
-                items: 1
-                //pagination : false
-            });
-
-            $("#owl-slider").owlCarousel({
-                autoPlay: 4000, //Set AutoPlay to 3 seconds
-                items: 1,
-                navigation: true,
-                //pagination : false,
-                navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
-            });
-
-            $("#img-carousel").owlCarousel({
-                autoPlay: 3000, //Set AutoPlay to 3 seconds
-                items: 4,
-                itemsDesktop: [1199, 3],
-                itemsDesktopSmall: [979, 3]
-
-            });
-
-            $("#portfolio-carousel").owlCarousel({
-                autoPlay: 3000, //Set AutoPlay to 3 seconds
-                items: 3,
-                itemsDesktop: [1199, 3],
-                itemsDesktopSmall: [979, 3],
-                navigation: true,
-                pagination: false,
-                navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
-
+            $("#img-carousel").owlCarousel({                
+                autoplay: true,
+                autoplaySpeed: 2000,
+                loop:false,
+                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                responsive:{
+                    0:{
+                        items:1,
+                        dots:false,
+                        nav:true
+                    },
+                    640:{
+                        items:3,
+                        dots:false,
+                        nav:true
+                    },
+                    979:{
+                        items:4,
+                        dots:true,
+                        nav:false
+                    },
+                    1199:{
+                        items:5,
+                        dots:true,
+                        nav:false
+                    },
+                    1440:{
+                        items:6,
+                        dots:true,
+                        nav:false
+                    }
+                }
             });
 
             $("#portfolio-carousel-alt").owlCarousel({
-                autoPlay: false, //Set AutoPlay to 3 seconds
+                autoplay: false,
+                loop:false,
                 items: 3,
-                itemsDesktop: [1199, 3],
-                itemsDesktopSmall: [979, 3],
-                navigation: true,
-                pagination: false,
-                navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+                nav: true,
+                dots: false,
+                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    640:{
+                        items:2
+                    },
+                    1199:{
+                        items:3
+                    }
+                }
             });
         }
 
