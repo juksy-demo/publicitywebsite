@@ -111,6 +111,6 @@ gulp.task('uglify:main-js', ['uglify:plugin-js'], function(){
 });
 
 
-gulp.task('build',['uglify:main-js']);
+// gulp.task('build',['uglify:main-js']);
 
 gulp.task('default', ['browser-sync', 'watch']);

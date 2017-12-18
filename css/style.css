@@ -818,6 +818,69 @@ nav a.juksy {
   .navlogo { height: 50px; }
 }
 /*==============================================
+ viedo youtube
+ ===============================================*/
+.video_02 {
+  position: relative;
+  background-color: #000000;
+  font-family: "Open Sans", "Microsoft JhengHei", sans-serif;
+  color: #fff; }
+@media screen and (min-width: 1280px) {
+  .video_02 {
+    background-color: transparent; }
+}
+
+.video_02 .videoWrap .parallax {
+  display: none; }
+@media screen and (min-width: 1024px) {
+  .video_02 .videoWrap .parallax {
+    display: block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    bottom: 0;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    perspective: 1000;
+    position: fixed;
+    right: 0;
+    width: auto; }
+  .video_02 .videoWrap .parallax .parallaxWrap {
+    width: 100%;
+    height: 100vh; }
+  .video_02 .videoWrap .parallax .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0; }
+  .video_02 .videoWrap .parallax .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+}
+@media screen and (min-width: 1280px) {
+.video_02 .videoWrap .parallaxContent {
+  height: 100vh;
+  cursor: pointer; }
+}
+.video_02 .videoWrap .mobile {
+  position: relative;
+  margin-top: 30px;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0; }
+@media screen and (min-width: 1280px) {
+.video_02 .videoWrap .mobile {
+  display: none; }
+}
+.video_02 .videoWrap .mobile iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; } 
+/*==============================================
  Map
  ===============================================*/
 @media screen and (min-width: 80em) {
@@ -1152,6 +1215,9 @@ nav a.juksy {
 .navbar-search .form-control {
   border-radius: 0; }
 
+.l-navbar_t-light {
+    background: #fff; }  
+
 @media (max-width: 768px) {
   .l-header {
     position: fixed;
@@ -1224,9 +1290,7 @@ nav a.juksy {
   .l-navbar-wrapper,
   .logo-brand,
   .menuzord-menu > li > a {
-    transition: height .3s, line-height .3s, margin .3s; }
-  .l-navbar-wrapper_has-sticky .l-navbar_t-light {
-    background: #fff; }
+    transition: height .3s, line-height .3s, margin .3s; }  
   .l-navbar_t-dark {
     background: #0a0a0a; }
   .l-navbar_t-dark .menuzord-menu > li > a,
