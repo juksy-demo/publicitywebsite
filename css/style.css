@@ -183,6 +183,9 @@ pre {
 .bgblack {
   background-color: #1a1a1a; }
 
+.bgwhite {
+  background-color: #ffffff; }
+
 .colorgold {
   color: #d6b161; }
 
@@ -691,6 +694,22 @@ footer .footer-logo svg .st0 {
     0%   {transform: translateY(0);}
     100% {transform: translateY(-100%) translateY(560px);}
 }
+@media (max-width: 768px) {
+  .creative .col-md-3  {
+    width: 50%;
+    float: left;
+  }
+  .creative .col-md-3:nth-child(3),
+  .creative .col-md-3:nth-child(4)  {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 480px) {
+  .creative .col-md-3:nth-child(3),
+  .creative .col-md-3:nth-child(4)  {
+    padding-top: 0px;
+  }
+}
 /*==============================================
  icon
  ===============================================*/
@@ -844,6 +863,7 @@ nav a.juksy {
     perspective: 1000;
     position: fixed;
     right: 0;
+    top: 100px;
     width: auto; }
   .video_02 .videoWrap .parallax .parallaxWrap {
     width: 100%;
@@ -866,7 +886,6 @@ nav a.juksy {
 }
 .video_02 .videoWrap .mobile {
   position: relative;
-  margin-top: 30px;
   padding-bottom: 56.25%;
   /* 16:9 */
   height: 0; }
@@ -1343,7 +1362,7 @@ nav a.juksy {
   .l-navbar-wrapper_has-sticky .l-navbar_t-light-trans {
     background: #fff; }
   .l-navbar-wrapper_has-sticky .logo-brand,
-  .l-navbar-wrapper_has-sticky .menuzord-menu > li > a {
+  .menuzord-menu_has-sticky > li > a {
     line-height: 60px; }
   .l-navbar-wrapper_has-sticky .logo-brand {
     height: 60px; }
@@ -2840,7 +2859,11 @@ body {
 .video-parallax {
   position: relative;
   overflow: hidden;
-  font-size: 0; }
+  font-size: 0;
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0; }
 
 .video-parallax .container {
   position: absolute;
@@ -2875,7 +2898,11 @@ body {
   z-index: 5;
   background: rgba(0, 0, 0, 0.5);
   -webkit-backface-visibility: hidden; }
-
+@media screen and (max-width: 768px) {  
+  .video-parallax {
+    padding-top: 50px;
+  }  
+}
 /*==============================================
  Countdown
  ===============================================*/

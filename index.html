@@ -71,7 +71,7 @@
 </header>
 
 
-<div id="fullscreen-banner" class="video-parallax inline-block bgblack video_02" data-menu="true">
+<div class="video-parallax inline-block bgblack video_02">
 
     <div class="videoWrap">
       <div class="parallax">
@@ -95,7 +95,7 @@
 </div>
 
 
-<div class="page-content bgblack">
+<div class="creative page-content bgblack">
     <div class="container colorgold">
         <div class="row">
             <div class="col-md-3 ">
@@ -150,7 +150,7 @@
     </div>
 </div>
     <!-- 街星大事記 -->
-<div id="abooutme" class="page-content">
+<div id="abooutme" class="page-content bgwhite">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -301,7 +301,7 @@
     </div>
 </div>
     <!-- 台灣NO.1流行娛樂平台 -->
-<div id="core" class="page-content" id="feature">
+<div id="core" class="page-content bgwhite" id="feature">
     <div class="container">
         <div class="row">            
             <div class="col-md-6 core-txt-top">
@@ -438,7 +438,7 @@
 </div>
     <!-- 街星焦點 -->
 <!--feature product-->
-<div class="page-content">
+<div class="page-content bgwhite">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -615,7 +615,7 @@
     </div>
 </div>
     <!-- 專業媒體行銷方案 -->
-<div id="marketing" class="page-content">
+<div id="marketing" class="page-content bgwhite">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -1002,7 +1002,7 @@
 </div>
 <!--clients-->
 
-<div id="contactus" class="page-content">
+<div id="contactus" class="page-content bgwhite">
     <div class="container">
         <div class="row">
             <div class="col-md-8 nopadding">
@@ -1088,84 +1088,7 @@
 <script src="vendor/visible/visible.js"></script>
 <script src="vendor/wow/wow.min.js"></script>
 <script src="js/scripts.js"></script>
-
-<script>
-	 /*==============================================
-    Youtube
-    ===============================================*/
-
-
-
-    // embedding youtube iframe api
-    // https://developers.google.com/youtube/iframe_api_reference#Getting_Started
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-	  var player,
-	    video_02_player = $('#video_02_player'),
-	    video_02_videoId = video_02_player.data('videoid'),
-	    video_02_start = video_02_player.data('start');
-    // whenever youtube callback was called = deferred resolved
-    // your custom function will be executed with YT as an argument
-function onYouTubePlayerAPIReady() {
-    console.log(video_02_videoId);
-
-    player = new YT.Player('video_02_player', { 
-	    videoId: video_02_videoId, // YouTube 影片ID
-	    width: 1280, // 播放器寬度 (px)
-	    height: 720, // 播放器高度 (px)
-	    playerVars: {
-	      rel: 0, // 播放結束後推薦其他影片
-	      controls: 0, // 在播放器顯示暫停／播放按鈕
-	      start: video_02_start, //指定起始播放秒數
-	      autoplay: 0, // 在讀取時自動播放影片
-	      loop: 1, // 讓影片循環播放
-	      playlist: video_02_videoId,
-	      showinfo: 0, // 隱藏影片標題
-	      modestbranding: 1, // 隱藏YouTube Logo
-	      fs: 0, // 隱藏全螢幕按鈕
-	      cc_load_policty: 0, // 隱藏字幕
-	      iv_load_policy: 3, // 隱藏影片註解
-	      autohide: 0 // 當播放影片時隱藏影片控制列
-	    },
-	    events: {
-	      onReady: function(e) {                  
-	        console.log('e1');
-	        var $video02 = $('#video_02_player'),
-	            $window = $(window);
-	        // mobile don't active
-	        if ($window.width() < 1024) return;
-	        // set video high quality
-	        e.target.setPlaybackQuality('hd1080');
-	        // control video play and pause
-	        $video02.parents().find('.parallaxContent').click(function() {
-	          if (e.target.getPlayerState() == 1) {
-	            e.target.pauseVideo();
-	          }
-	          else {
-	            e.target.playVideo();
-	          }
-	        });
-	        // scroll to auto play
-	        function vPlay() {
-	          var in_position = $video02.parents().find('.title').offset().top,
-	              window_position = $window.scrollTop(),
-	              status = $video02.data('vplay');
-	          if (status == 'true') return;
-	          if (in_position < window_position) {
-	            e.target.playVideo();
-	            $video02.data('vplay', 'true');
-	          }
-	        }
-	        $window.scroll(_.throttle(vPlay, 250));
-	      }
-	    }
-  });
-
-}
-</script>
+<script src="js/youtube.js"></script>
 </body>
 
 </html>

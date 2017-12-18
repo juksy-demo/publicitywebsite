@@ -75,11 +75,12 @@
          Sticky nav
          ===============================================*/
         function initSticky() {
-            var $navbarSticky, navbarHeight, $brandLogo, centerLogoNormalHeight, centerLogoStickyHeight, $navLogo;
+            var $navbarSticky, navbarHeight, $menuzordMenu, $brandLogo, centerLogoNormalHeight, centerLogoStickyHeight, $navLogo;
             $navbarSticky = $(".js-navbar-sticky").not(".l-navbar_s-left");
             navbarHeight = $navbarSticky.height();
             $brandLogo = $(".logo-brand");
             $navLogo = $(".navlogo");
+            $menuzordMenu = $(".menuzord-menu");
             centerLogoNormalHeight = 100;
             centerLogoStickyHeight = 60;
 
@@ -90,13 +91,23 @@
             if ( $window.width()> 768) {
                 $navbarSticky.sticky({
                     className: "l-navbar-wrapper_has-sticky",
-                    wrapperClassName: "l-navbar-wrapper",
+                    wrapperClassName: "l-navbar-wrapper",                    
                     zIndex: 10000,
                     bottomSpacing: 100
                 }).on("sticky-start", function() {
-                    $navLogo.addClass("sticky-fix").height(centerLogoStickyHeight);
+                  $window.on("scroll", function () {
+                    if($window.scrollTop()>200) {
+                      $menuzordMenu.addClass("menuzord-menu_has-sticky");
+                      $navLogo.addClass("sticky-fix").height(centerLogoStickyHeight);
+                    }  
+                  });  
                 }).on("sticky-end", function () {
-                    $navLogo.addClass("sticky-fix").height(centerLogoNormalHeight);
+                  $window.on("scroll", function () {
+                    if($window.scrollTop()<100) {
+                      $menuzordMenu.removeClass("menuzord-menu_has-sticky");
+                      $navLogo.addClass("sticky-fix").height(centerLogoNormalHeight);
+                    }
+                  });
                 });
             }    
         }
