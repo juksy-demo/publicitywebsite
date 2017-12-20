@@ -1098,6 +1098,7 @@ Main Components horizontal timeline
 
 .cd-horizontal-timeline .events-content {
   position: relative;
+  overflow: hidden;
   width: 100%;
   margin: 2em 0;
   -webkit-transition: height 0.4s;
@@ -4822,13 +4823,32 @@ address .tel, address .phone {
   vertical-align: top;
   color: #7e7e7e;
 }
-
 address .tel { 
   padding-right: 4px; }
 
 address p {
   margin-bottom: 0px; }
-
+button.contactus {
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  border-radius: 0;
+  border: 1px solid #000;
+  margin: 0;
+  display: block;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+button.contactus:hover {
+  background-color: #d6b161;  
+  border: 1px solid #9c9c9c;
+}
 .ticket-register .form-control {
   border-radius: 5px;
   height: 40px;
