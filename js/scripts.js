@@ -577,6 +577,30 @@
           $(document).trigger('parallax');
         });
 
+        /*==============================================
+         contentsNavUI 
+         ===============================================*/
+        var _contentsNavUI = function _contentsNavUI() {
+        var $contentsNav_section = $('.contentsNav_section');
+
+        $contentsNav_section.each(function () {
+            var $this = $(this);
+            var $contentsNav_item = $this.find('.contentsNav_item');
+            var $contentsNav_section_bg = $this.find('.contentsNav_section_bg');
+
+              $(this).on({
+                'mouseenter touchstart': function mouseenterTouchstart() {
+                  $contentsNav_section_bg.addClass('is-active');
+                },
+                'mouseleave touchend': function mouseleaveTouchend() {
+                  $contentsNav_section_bg.removeClass('is-active');
+                }
+              });
+
+          });
+        };      
+        _contentsNavUI();
+
         
         
     });
