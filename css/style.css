@@ -6001,7 +6001,7 @@ Table of contents
   .page-content {
     padding: 50px 0; }
   .heading-title {
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
   .promo-info {
     padding-right: 0px; }
   .promo-btn {
@@ -6186,6 +6186,7 @@ Table of contents
   
   .core-txt-top {
     padding-top: 0px;
+    padding-bottom: 20px;
   }
   
   .marketing-title {

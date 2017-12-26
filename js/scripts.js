@@ -434,7 +434,7 @@
             $("#img-carousel").owlCarousel({                
                 autoplay: true,
                 autoplaySpeed: 2000,
-                loop:false,
+                loop:true,
                 navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
                 responsive:{
                     0:{
@@ -600,6 +600,20 @@
           });
         };      
         _contentsNavUI();
+
+
+
+        $(".team-member .team-img").hover(
+        function(){
+          var img=$(this).find("img");
+          var tl=new TimelineMax();
+          tl.to(img,0.2,{scale:1.1,ease: Power1.easeIn});
+          tl.to(img,0.2,{scale:1,ease: Power1.easeIn});
+          tl.play();
+        },function(){
+          // $img=$(this).find(".banner_box img");
+          // TweenMax.to($img,0.4,{scale:1,ease: Back.easeIn});
+        });
 
         
         

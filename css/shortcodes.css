@@ -2789,19 +2789,29 @@ dl.toggle.time-line:before {
 /*------------------------------------------------------------------
     team member
 -------------------------------------------------------------------*/
-.team-member {
+/* .team-member {
     overflow: hidden;
-}
+} */
 
 .team-member,
 .team-member .team-img {
+    text-align: center;
     position: relative;
 }
 
 .team-member .team-img img {
     width: 100%;
     height: auto;
+    cursor: pointer;
+    background-color: rbga(0,0,0,0);
+    -webkit-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
+
+.team-member .team-img img:hover {
+    background-color: red;
+}
+
 
 .team-member .team-intro {
     position: absolute;
@@ -2935,20 +2945,21 @@ dl.toggle.time-line:before {
 .team-title h5 {
     display: block;
     margin-bottom: 0;
+    line-height: 2.5;
     text-transform: uppercase;
 }
-
-.team-title span {
-    letter-spacing: 1px; 
-    text-transform: uppercase;
-    color: #a5a5a5;
-    font-size: 12px;
+.team-title h5 a {
+    color: #ffffff;
 }
 
 .team-title p {
-    padding-top: 30px;
+    letter-spacing: 1px;
+    display: block;
+    text-transform: uppercase;
+    color: #a5a5a5;
+    line-height: 1.5;
     letter-spacing: normal;
-    line-height: 30px;
+    font-size: 14px;
 }
 
 /*------------------------------------------------------------------
