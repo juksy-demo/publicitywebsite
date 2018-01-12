@@ -2399,12 +2399,13 @@ body {
 
 .portfolio-hover {
   position: absolute;
-  top: 0;
+  width: 80%;
+  height: 40px;
+  bottom: 10px;
   left: 0;
-  bottom: 0;
   right: 0;
-  margin: 0;
-  border: 20px solid rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  border: 2px solid #000;
   background-color: rgba(255, 255, 255, 0.9);
   opacity: 0;
   transition: all 0.3s; }
@@ -2414,20 +2415,18 @@ body {
 .portfolio-item:hover .portfolio-hover .action-btn {
   opacity: 1; }
 
-.portfolio-item:hover .portfolio-hover .portfolio-description {
-  bottom: 56px;
-  margin-bottom: 0px; }
-
-.portfolio-item:hover .portfolio-hover .action-btn {
-  top: 40%;
-  margin-top: -55px; }
+@media (max-width: 768px) {
+  .portfolio-item .portfolio-hover,
+  .portfolio-item .portfolio-hover .portfolio-description,
+  .portfolio-item .portfolio-hover .action-btn {
+    opacity: 1; }
+}
 
 .portfolio-hover .portfolio-description {
   position: absolute;
-  bottom: 0%;
+  bottom: 0;
   width: 100%;
   opacity: 0;
-  transform: translateY(-55%);
   transition: all 0.3s; }
 
 .portfolio-hover .action-btn {
@@ -2447,7 +2446,8 @@ body {
   color: #222; }
 
 .portfolio-description h4 {
-  margin-bottom: 5px;
+  line-height: 38px;
+  margin-bottom: 0;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 4px; }
