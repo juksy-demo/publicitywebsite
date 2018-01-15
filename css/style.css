@@ -616,6 +616,16 @@ pre {
  New Add
  ===============================================*/
 .showmobile { display: none; }
+.team-title {
+  padding: 0px 10px 20px 10px;
+}
+.team-title h5 a {
+  color:#1d2129;
+  font-size: 21px;
+}
+.team-title p {
+  color: #7e7e7e;
+}
 @media (max-width: 568px) {
   .showmobile { display: block; }
 }
@@ -694,11 +704,17 @@ footer .footer-logo svg .st0 {
 @media (max-width: 768px) {
   .creative .col-md-3  {
     width: 50%;
+    padding: 0;
     float: left;
   }
   .creative .col-md-3:nth-child(3),
   .creative .col-md-3:nth-child(4)  {
     padding-top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .creative.page-content {
+    padding: 0;
   }
 }
 @media (max-width: 480px) {
@@ -973,7 +989,7 @@ footer .footer-logo svg .st0 {
   float: left;
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 90px;
   transition: height .3s, line-height .3s, margin .3s;
 }
 .color-white {
@@ -988,6 +1004,7 @@ nav a.juksy {
   width: 195px;
   float: left;
 }
+.navlogo img { width: 300px; }
 @media (max-width: 768px) {
   nav a.juksy { width: 120px; }
   .navlogo { height: 50px; }
@@ -1058,12 +1075,6 @@ nav a.juksy {
 /*==============================================
  Map
  ===============================================*/
-@media screen and (min-width: 80em) {
-  #grey-map {
-      width: 720px;
-      margin: 0 auto 50px;
-  }
-}
 #grey-map {
     overflow: hidden;
     padding-bottom: calc(100% * 300 / 720);
@@ -1081,6 +1092,15 @@ nav a.juksy {
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
     -webkit-backface-visibility: hidden;  /* Fix for transition flickering */
+}
+@media screen and (max-width: 1024px) {
+  #grey-map {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+  }
 }
 /*==============================================
  Navbar
@@ -2381,78 +2401,101 @@ body {
   transition: none; }
 
 /*==============================================
- Portfolio
+ gallery3
  ===============================================*/
-.portfolio {
+.gallery3 {
   margin: 20px 0; }
 
-.portfolio .portfolio-item {
+.gallery3.gutter .portfolio-item {
+  padding: 25px 0; }
+
+.gallery3.col-3 .portfolio-item {
+  width: 100%; }
+@media (min-width: 767px) {
+  .gallery3.gutter .portfolio-item {
+    padding: 25px; }
+  .gallery3.col-3 .portfolio-item {
+    width: 50%; }
+}
+@media (min-width: 1024px) {
+  .gallery3.col-3 .portfolio-item {
+    width: 33.3333333%; }
+}
+.gallery3 .portfolio-item {
   float: left; }
 
-.portfolio .portfolio-item .thumb {
+.gallery3 .portfolio-item .thumb {
   position: relative; }
 
-.portfolio .portfolio-item .thumb img {
+.gallery3 .portfolio-item .thumb img {
   width: 100%;
   height: auto;
   display: block; }
 
-.portfolio-hover {
-  position: absolute;
-  width: 80%;
+.gallery3 .portfolio-hover {
   height: 40px;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  border: 2px solid #000;
-  background-color: rgba(255, 255, 255, 0.9);
-  opacity: 0;
+  margin: 0 auto 2px auto;
+  border-bottom: 2px solid #1d2129;
   transition: all 0.3s; }
 
-.portfolio-item:hover .portfolio-hover,
-.portfolio-item:hover .portfolio-hover .portfolio-description,
-.portfolio-item:hover .portfolio-hover .action-btn {
-  opacity: 1; }
-
-@media (max-width: 768px) {
-  .portfolio-item .portfolio-hover,
-  .portfolio-item .portfolio-hover .portfolio-description,
-  .portfolio-item .portfolio-hover .action-btn {
-    opacity: 1; }
-}
-
-.portfolio-hover .portfolio-description {
+.gallery3 .portfolio-hover span {
   position: absolute;
+  right: 10px;
+  top: 0;
   bottom: 0;
+  margin: auto;
+  width: 15px;
+  height: 2px;
+  display: block;
+  background-color: #000;
+ }
+.gallery3 .portfolio-hover span:before {
+  content: '';
+  position: relative;
+  width: 15px;
+  height: 2px;
+  display: block;
+  bottom: 5px;
+  background-color: #000;
+ }
+.gallery3 .portfolio-hover span:after {
+  content: '';
+  position: relative;
+  width: 15px;
+  height: 2px;
+  display: block;
+  top: 3px;
+  background-color: #000;
+ }  
+
+.gallery3 .portfolio-hover .portfolio-description {
+  position: relative;
   width: 100%;
-  opacity: 0;
   transition: all 0.3s; }
 
-.portfolio-hover .action-btn {
+.gallery3 .portfolio-hover .action-btn {
   position: absolute;
   top: 0;
   width: 100%;
-  opacity: 0;
   text-align: center;
   transform: translateY(45%);
   transition: all 0.3s;
   font-size: 35px; }
 
-.portfolio-description,
-.portfolio-description h4 a,
-.portfolio-hover .action-btn a {
+.gallery3 .portfolio-description,
+.gallery3 .portfolio-description h4 a,
+.gallery3 .portfolio-hover .action-btn a {
   text-align: center;
   color: #222; }
 
-.portfolio-description h4 {
+.gallery3 .portfolio-description h4 {
   line-height: 38px;
   margin-bottom: 0;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 4px; }
 
-.portfolio-description p {
+.gallery3 .portfolio-description p {
   font-size: 12px;
   margin-bottom: 0;
   text-transform: uppercase;
@@ -2461,10 +2504,12 @@ body {
   letter-spacing: 3px;
   color: #757575; }
 
-.portfolio-description a,
-.portfolio-title a {
+.gallery3 .portfolio-description a,
+.gallery3 .portfolio-title a {
   color: #757575; }
-
+/*==============================================
+ gallery3 end
+ ===============================================*/
 /*gutter*/
 .portfolio.gutter .portfolio-item {
   padding: 10px; }
