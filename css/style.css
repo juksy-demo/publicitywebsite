@@ -976,6 +976,33 @@ footer .footer-logo svg .st0 {
   height: 50px;
   margin: 0 auto;
 }
+.icon-16:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/16.png");
+  background-size: cover;
+  width: 46px;
+  height: 50px;
+  margin: 0 auto;
+}
+.icon-17:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/17.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.icon-18:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/18.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
 /*==============================================
  Header
  ===============================================*/

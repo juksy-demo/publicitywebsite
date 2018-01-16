@@ -380,11 +380,12 @@
             transition: all .3s ease;
 }
 
-.featured-item.feature-bg-box .icon,
-.marketing-item .icon {
+.featured-item.feature-bg-box .icon {
     padding-bottom: 20px;
 }
-
+.marketing-item .icon {
+    padding-bottom: 10px;
+}
 .marketing-item .title h4 {
     margin: 0;
     font-size: 16px;
