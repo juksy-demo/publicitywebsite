@@ -19,8 +19,8 @@
 	function onYouTubePlayerAPIReady() {
 	    player = new YT.Player('video_02_player', { 
 		    videoId: video_02_videoId, // YouTube 影片ID
-		    width: 1280, // 播放器寬度 (px)
-		    height: 720, // 播放器高度 (px)
+		    width: 1170, // 播放器寬度 (px)
+		    height: 658, // 播放器高度 (px)
 		    playerVars: {
 		      rel: 0, // 播放結束後推薦其他影片
 		      controls: 0, // 在播放器顯示暫停／播放按鈕
@@ -46,14 +46,14 @@
 	            // set video high quality
 	            e.target.setPlaybackQuality('hd1080');
 	            // control video play and pause
-	            $video02.parents().find('.parallaxContent').click(function() {
-	              if (e.target.getPlayerState() == 1) {
-	                e.target.pauseVideo();
-	              }
-	              else {
-	                e.target.playVideo();
-	              }
-	            });
+	            // $video02.parents().find('.parallaxContent').click(function() {
+	            //   if (e.target.getPlayerState() == 1) {
+	            //     e.target.pauseVideo();
+	            //   }
+	            //   else {
+	            //     e.target.playVideo();
+	            //   }
+	            // });
 	          }
 	        }
 	  });

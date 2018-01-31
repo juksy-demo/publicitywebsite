@@ -94,20 +94,15 @@
                     wrapperClassName: "l-navbar-wrapper",                    
                     zIndex: 10000,
                     bottomSpacing: 100
-                }).on("sticky-start", function() {
-                  $window.on("scroll", function () {
-                    if($window.scrollTop()>200) {
-                      $menuzordMenu.addClass("menuzord-menu_has-sticky");
-                      $navLogo.addClass("sticky-fix").height(centerLogoStickyHeight);
-                    }  
-                  });  
+                }).on("sticky-start", function() {                 
+                    setTimeout(function() {
+                        $menuzordMenu.addClass("menuzord-menu_has-sticky");
+                        $navLogo.addClass("sticky-fix").height(centerLogoStickyHeight);
+                    }, 150);                
                 }).on("sticky-end", function () {
-                  $window.on("scroll", function () {
-                    if($window.scrollTop()<100) {
-                      $menuzordMenu.removeClass("menuzord-menu_has-sticky");
-                      $navLogo.addClass("sticky-fix").height(centerLogoNormalHeight);
-                    }
-                  });
+                    $navbarSticky.parent().height(navbarHeight);
+                    $menuzordMenu.removeClass("menuzord-menu_has-sticky");
+                    $navLogo.addClass("sticky-fix").height(centerLogoNormalHeight);
                 });
             }    
         }
@@ -468,7 +463,7 @@
             $("#portfolio-carousel-alt").owlCarousel({
                 autoplay: false,
                 loop:false,
-                items: 3,
+                items: 2,
                 nav: true,
                 dots: false,
                 navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
@@ -480,7 +475,7 @@
                         items:2
                     },
                     1199:{
-                        items:3
+                        items:2
                     }
                 }
             });

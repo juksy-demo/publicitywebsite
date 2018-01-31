@@ -1,0 +1,28 @@
+#products {
+    padding-top: 75px;
+    h2 {
+        left:-20px;
+    }
+    .portfolio-with-title {
+        .portfolio-title {
+            h4, a, p {
+                font-size: 15px;
+            }
+            h4 {
+                font-size: 20px;
+                color: #1a1a1a;
+            }
+        }
+    }
+    .c-info-row .c-info {
+        padding-right: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+	#products {
+        padding-top: 50px;
+        .c-info-row .c-info {
+            padding-right: 0;
+        }
+	}
+}

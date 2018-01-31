@@ -1,0 +1,116 @@
+
+.team-title {
+  padding: 0px 10px 20px 10px;
+  h4 {
+    margin: 10px 0 10px 0;
+    a {
+      color:#1a1a1a;
+    }
+  }
+  p {
+    font-size: 15px;
+  }
+}
+.featured-item .number svg{
+    width: 150px;
+    padding-bottom: 5px;
+}
+footer .footer-logo svg {
+    width: 195px;
+}
+footer .footer-logo svg .st0 {
+    fill: #fff;
+}
+.accordion dt .year, .accordion dt .info {
+    display: inline-block;
+    vertical-align: middle; }
+.accordion dt .year {
+  padding-right: 8px; }
+.accordion dt .info {
+    width: calc(100% - 50px); }
+
+.we-txt {
+  padding: 50px 0;
+  margin: 0;
+}
+.we-txt>div {
+  font-size: 18px;
+}
+.tabScroll {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.tabScroll>div {
+  background-color: #eeeeee;
+  background: url('../img/phone_out.png') no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 144px;
+  height: 300px;
+  position: relative;
+}
+.tabScroll>div>div {
+  padding: 0 15px;
+  width: 100%;
+  height: calc(100% - 70px);
+  overflow: hidden;
+  position: absolute;
+  margin: auto;
+  top: 20px;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+}
+@media (min-width: 992px) {
+  .tabScroll>div {
+    height: 300px; }
+}
+.tabScroll>div>div img{
+  animation-name: tabScroll;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction:alternate;
+}
+@keyframes tabScroll {
+    0%   {transform: translateY(0);}
+    100% {transform: translateY(-100%) translateY(560px);}
+}
+@media (max-width: 768px) {
+  .creative .col-md-3  {
+    width: 50%;
+    padding: 0;
+    float: left;
+  }
+  .creative .col-md-3:nth-child(3),
+  .creative .col-md-3:nth-child(4)  {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .creative.page-content {
+    padding: 0;
+  }
+}
+@media (max-width: 568px) {  
+  .creative .col-md-3  {
+    width: 50%;
+    padding: 0;
+    float: left;
+  }
+  .creative .col-md-3:nth-child(3),
+  .creative .col-md-3:nth-child(4)  {
+    padding-top: 0px;
+    .fun-factor {
+      padding: 0 0 30px 0;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .tabScroll {right: 30px;}
+  .tabScroll>div {
+    width: 86px;
+    height: 180px;
+  }  
+}

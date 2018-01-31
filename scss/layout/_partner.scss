@@ -1,0 +1,32 @@
+#partner {
+    .clients.grid-7 {
+        li {
+            width: 25%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            padding: 5px 0;
+            img {
+                display: block;
+                width: 100%;
+                padding: 0 5px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }        
+    }
+}
+@media screen and  (min-width: 767px) {
+    #partner {
+        .clients.grid-7 {
+            li {
+                width: 14.28%;
+                height: 120px;
+                padding: 20px 0;
+                img {
+                    width: auto;
+                }
+            }        
+        }
+    }
+}

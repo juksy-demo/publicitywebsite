@@ -2005,25 +2005,6 @@ dl.toggle.time-line:before {
     overflow: hidden;
 }
 
-.video-parallax .container {
-    position: absolute;
-    z-index: 100;
-    top: 50%;
-    right: 0;
-    left: 0;
-    margin-top: -80px; 
-    color: #fff;
-}
-
-.video-parallax .container i {
-    display: block; 
-    margin-bottom: 30px;
-    font-size: 50px;
-}
-
-.video-parallax .container + .video-wrap {
-    z-index: 1;
-}
 
 .video-wrap {
     position: relative; 

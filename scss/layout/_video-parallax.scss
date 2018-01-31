@@ -1,33 +1,24 @@
 .video-parallax {
   position: relative;
   overflow: hidden;
+  font-size: 0;
+  padding-top: 50px;
+  width: 100%;
+  position: relative; }
+
+.video-parallax .container {
+  width: 1170px;
 }
 
-.video-parallax .container{
-  position: absolute;
-  top: 50%;
-  z-index: 100;
-  left: 0;
-  right: 0;
-  color: #fff;
-  margin-top: -80px;
-}
-
-.video-parallax .container i{
-  font-size: 50px;
-  margin-bottom: 30px;
-  display: block;
-}
-
-.video-parallax .container+.video-wrap {
-  z-index: 1;
-}
+.video-parallax .container + .video-wrap {
+  z-index: 1; }
 
 .video-wrap {
   overflow: hidden;
+  text-align: center;
   width: 100%;
   position: relative;
-}
+  background-color: #1a1a1a;}
 
 .video-overlay, .banner-overaly {
   position: absolute;
@@ -36,6 +27,19 @@
   top: 0;
   left: 0;
   z-index: 5;
-  background: rgba(0,0,0,0.5);
-  -webkit-backface-visibility: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backface-visibility: hidden; }
+
+@media screen and (max-width: 1170px) {
+  .video-parallax .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .videoWrapper {
+    display: none;
+  }
+  .video-parallax {
+    padding-top: 50px;
+  }
 }

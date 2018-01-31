@@ -1,0 +1,66 @@
+.video_02 {
+  position: relative;
+  background-color: #1a1a1a;
+  font-family: "Open Sans", "Microsoft JhengHei", sans-serif;
+  color: #fff; }
+
+.video_02 .videoWrap .parallax {
+  display: none; }
+@media screen and (min-width: 1024px) {
+  .video_02 .videoWrap .parallax {
+    display: block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;    
+    height: auto;
+    max-width: 1170px;
+    width: auto;
+    perspective: 1000;
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  .video_02 .videoWrap .parallax .parallaxWrap {
+    width: 100%;
+    height: 100vh; }
+  .video_02 .videoWrap .parallax .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0; }
+  .video_02 .videoWrap .parallax .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .video_02 .videoWrap .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0; }
+  .video_02 .videoWrap .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+}
+@media screen and (min-width: 1280px) {
+.video_02 .videoWrap .parallaxContent {
+  height: 100vh;
+  cursor: pointer; }
+}
+.video_02 .videoWrap .mobile {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0; }
+@media screen and (min-width: 1280px) {
+.video_02 .videoWrap .mobile {
+  display: none; }
+}
+.video_02 .videoWrap .mobile iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; } 

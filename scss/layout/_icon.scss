@@ -1,0 +1,154 @@
+.fun-factor.alt .icon {
+  display: inline-block;
+  float: none;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.icon.hidden { display: inline-block !important; }
+@media screen and (max-width: 568px) {
+  .icon.hidden { display: none !important; }
+  .fun-factor.alt .icon {
+    margin-bottom: 0;
+  }
+}
+
+.icon-layers:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/01.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+.icon-computer:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/02.png");
+  background-size: cover;
+  width: 62px;
+  height: 50px;
+}
+.icon-database:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/03.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+.icon-linegraph:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/04.png");
+  background-size: cover;
+  width: 58px;
+  height: 50px;
+}
+@media (max-width: 568px) {
+  .icon-layers:before {
+    width: 25px;
+    height: 25px;
+  }
+  .icon-computer:before {
+    width: 31px;
+    height: 25px;
+  }
+  .icon-database:before {
+    width: 25px;
+    height: 25px;
+  }
+  .icon-linegraph:before {
+    width: 29px;
+    height: 25px;
+  }
+}
+.icon-05:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/05.png");
+  background-size: cover;
+  width: 51px;
+  height: 51px;
+  margin: 0 auto;
+}
+.icon-06:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/06.png");
+  background-size: cover;
+  width: 51px;
+  height: 51px;
+  margin: 0 auto;
+}
+.icon-07:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/07.png");
+  background-size: cover;
+  width: 60px;
+  height: 51px;
+  margin: 0 auto;
+}
+.icon-12:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/12.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.icon-13:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/13.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.icon-14:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/14.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.icon-15:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/15.png");
+  background-size: cover;
+  width: 60px;
+  height: 50px;
+  margin: 0 auto;
+}
+.icon-16:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/16.png");
+  background-size: cover;
+  width: 46px;
+  height: 50px;
+  margin: 0 auto;
+}
+.icon-17:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/17.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.icon-18:before {
+  content: '';
+  display: block;
+  background: url("../img/icon/18.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}

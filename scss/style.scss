@@ -1,58 +1,4 @@
 /*==============================================
-  Project:   Massive - Multipurpose Responsive Theme
-  Build:     Bootstrap 3+
-  Author:    ThemeBucket
- ===============================================*/
-
-/*==============================================
-  Table of Contents
-
-  0. tb preloader
-  1. import css files
-  2. typography
-  3. header
-  4. top mega menu
-  5. menu appear alt
-  6. floating menu
-  7. nav icon
-  8. nav link boxed
-  9. nav link border box
-  10. nav link border bottom
-  11. nav center align
-  12. nav bottom position
-  13. nav block left align
-  14. pre-defined >  margin top | margin bottom
-  15. body content
-  16. portfolio
-  17. portfolio with title
-  18. portfolio masonry
-  19. Isotope Filtering
-  20. portfolio details
-  21. portfolio nav
-  22. masonry grid
-  23. Flex Slider
-  24. slider revolution
-  25. maintenance
-  26. top bar
-  27. primary nav
-  28. countdown
-  29. bs slider
-  30. static banner
-  31. video banner
-  32. custom pagination
-  33. Product list
-  34. contact us
-  35. event page
-  36. magazine page
-  37. catering page
-  38. hotel page
-  39. app landing page
-  40. Slider Typist
-  41. Boxed View
-  42. scroll top
- ===============================================*/
-
-/*==============================================
  Pre Loader
  ===============================================*/
 @import "layout/preloader";
@@ -78,39 +24,54 @@
 @import "layout/topbar";
 
 /*==============================================
- Header
+ New Add
+ ===============================================*/
+ @import "layout/newadd";
+
+/*==============================================
+ 有限公司+街星大事記
+ ===============================================*/
+ @import "layout/aboutme";
+
+/*==============================================
+ 捷喜多媒體事業
+ ===============================================*/
+ @import "layout/wedo";
+
+/*==============================================
+ 台灣NO.1流行娛樂平台 + 名人專訪議題
+ ===============================================*/
+ @import "layout/core"; 
+
+/*==============================================
+ 街星焦點
+ ===============================================*/
+ @import "layout/products"; 
+ 
+/*==============================================
+ Icons
+ ===============================================*/
+ @import "layout/icon"; 
+
+/*==============================================
+ Header + logo
  ===============================================*/
 @import "layout/header";
+
+/*==============================================
+ youtube video
+ ===============================================*/
+ @import "layout/youtubevideo";
+
+/*==============================================
+youtube video
+===============================================*/
+  @import "layout/map";
 
 /*==============================================
  Navbar
  ===============================================*/
 @import "layout/navbar";
-
-/*==============================================
- Nav: Primary
- ===============================================*/
-@import "layout/nav-primary";
-
-/*==============================================
- Nav: Push
- ===============================================*/
-@import "layout/nav-push";
-
-/*==============================================
- Nav: Dotted
- ===============================================*/
-@import "layout/nav-dotten";
-
-/*==============================================
- Nav: Side
- ===============================================*/
-@import "layout/nav-side";
-
-/*==============================================
- Breadcrumb
- ===============================================*/
-@import "layout/breadcrumb";
 
 /*==============================================
  Body
@@ -123,34 +84,19 @@
 @import "layout/isotope";
 
 /*==============================================
- Portfolio
+ gallery3
  ===============================================*/
-@import "layout/portfolio";
+ @import "layout/gallery3";
 
 /*==============================================
- Banner: Flex
+ partner
  ===============================================*/
-@import "layout/banner-flex";
+ @import "layout/partner";
 
 /*==============================================
- Banner: Revolution
+ contactus
  ===============================================*/
-@import "layout/banner-rev";
-
-/*==============================================
- Banner: Bootstrap
- ===============================================*/
-@import "layout/banner-bs";
-
-/*==============================================
- Banner: Static
- ===============================================*/
-@import "layout/banner-static";
-
-/*==============================================
- Banner: Video
- ===============================================*/
-@import "layout/banner-video";
+ @import "layout/contactus";
 
 /*==============================================
  Video Parallax
@@ -158,99 +104,14 @@
 @import "layout/video-parallax";
 
 /*==============================================
- Countdown
- ===============================================*/
-@import "layout/countdown";
-
-/*==============================================
- Pagination
- ===============================================*/
-@import "layout/pagination";
-
-/*==============================================
- Product
- ===============================================*/
-@import "layout/product";
-
-/*==============================================
- Boxed View
- ===============================================*/
-@import "layout/boxed-view";
-
-/*==============================================
- Blog
- ===============================================*/
-@import "layout/blog";
-
-/*==============================================
- Post
- ===============================================*/
-@import "layout/post";
-
-/*==============================================
- TB Grid
- ===============================================*/
-@import "layout/tb-grid";
-
-/*==============================================
- Typist
- ===============================================*/
-@import "layout/typist";
-
-/*==============================================
  Footer
  ===============================================*/
 @import "layout/footer";
 
 /*==============================================
- Pages
- ===============================================*/
-
-// Maintenance
-@import "pages/maintenance";
-// Login
-@import "pages/login";
-// Contact Us
-@import "pages/contact-us";
-// Event
-@import "pages/event";
-// Magazine
-@import "pages/magazine";
-// Catering
-@import "pages/catering";
-// Hotel
-@import "pages/hotel";
-// App Landing
-@import "pages/app-landing";
-// Intro
-@import "pages/intro";
-// Travel
-@import "pages/travel";
-// Fashion
-@import "pages/fashion";
-// Wedding
-@import "pages/wedding";
-// Decor
-@import "pages/decor";
-// Portfolio
-@import "pages/portfolio";
-// 404
-@import "pages/error-404";
-
-/*==============================================
- Mailchimp
- ===============================================*/
-@import "layout/mailchimp";
-
-/*==============================================
  Scroll Top
  ===============================================*/
 @import "layout/scroll-to-top";
-
-/*==============================================
- Background Images
- ===============================================*/
-@import "pages/background-img";
 
 /*==============================================
  Responsive

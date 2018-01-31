@@ -1,0 +1,38 @@
+#core {
+	padding-bottom: 75px;
+	.col-md-6 {
+		padding: 0;
+		&.left {
+			padding-right: 20px;
+			.number,
+			.desc {
+				padding-left: 20px;
+			}
+		}
+		&.right {
+			padding-left: 20px;
+		}
+	}
+	img {
+		width: 100%;
+	}
+}
+#carousel {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
+@media screen and (max-width: 768px) {
+	#core {
+		padding-bottom: 50px;
+		.col-md-6.right {
+			margin-top: 30px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+	#carousel {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
