@@ -33,7 +33,7 @@
 		      fs: 0, // 隱藏全螢幕按鈕
 		      cc_load_policty: 0, // 隱藏字幕
 		      iv_load_policy: 3, // 隱藏影片註解
-		      autohide: 0 // 當播放影片時隱藏影片控制列
+					autohide: 0 // 當播放影片時隱藏影片控制列
 		    },
 	        events: {
 	          onReady: function(e) {
@@ -45,15 +45,6 @@
 	            e.target.mute();
 	            // set video high quality
 	            e.target.setPlaybackQuality('hd1080');
-	            // control video play and pause
-	            // $video02.parents().find('.parallaxContent').click(function() {
-	            //   if (e.target.getPlayerState() == 1) {
-	            //     e.target.pauseVideo();
-	            //   }
-	            //   else {
-	            //     e.target.playVideo();
-	            //   }
-	            // });
 	          }
 	        }
 	  });

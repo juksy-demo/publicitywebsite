@@ -704,7 +704,10 @@ footer .footer-logo svg .st0 {
 
 @media (max-width: 767px) {
   .creative.page-content {
-    padding: 0; } }
+    padding: 0; }
+  .tabScroll > div > div {
+    height: calc(100% - 50px);
+    top: 40px; } }
 
 @media (max-width: 568px) {
   .creative .col-md-3 {
@@ -759,12 +762,9 @@ footer .footer-logo svg .st0 {
 #abooutme section.bottom {
   margin-top: 100px; }
 
-#abooutme section.bottom img {
-  max-width: 360px; }
-
 #abooutme section.bottom .col-md-6:nth-child(1) {
   text-align: right;
-  margin-top: 90px; }
+  margin-top: 10px; }
 
 #abooutme section.bottom .col-md-6:nth-child(2) {
   text-align: left; }
@@ -824,7 +824,7 @@ footer .footer-logo svg .st0 {
   box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.1); }
   #wedo .wrap h3 {
     line-height: 1.5;
-    height: 74px;
+    height: 54px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -2428,6 +2428,7 @@ youtube video
   .menuzord-responsive .menuzord-menu > li {
     width: 100%;
     display: block;
+    text-align: center;
     position: relative; }
   .menuzord-responsive .menuzord-menu > li > a {
     width: 100%;

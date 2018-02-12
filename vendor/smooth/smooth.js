@@ -31,9 +31,13 @@
     var defaults = {
         speed: 500,
         easing: 'easeInOutCubic',
-        offset: -60,
+        offset: -40,
         updateURL: true,
-        callback: function () {}
+        callback: function () {
+            if ($(".showhide").is(":visible")) {
+                $(".showhide").trigger("click");
+            }
+        }
     };
 
 
