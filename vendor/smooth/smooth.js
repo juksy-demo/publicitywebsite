@@ -34,7 +34,7 @@
         offset: -40,
         updateURL: true,
         callback: function () {
-            if ($(".showhide").is(":visible")) {
+            if ($(".menuzord-menu").css('display') !== 'none') {
                 $(".showhide").trigger("click");
             }
         }

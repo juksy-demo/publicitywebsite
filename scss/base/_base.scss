@@ -136,6 +136,7 @@ h4 {
 }
 
 .showmobile { display: none !important; }
+.hidden-mobile { display: block; }
 
 @media screen and (max-width: 768px) {
   h2 {
@@ -153,5 +154,6 @@ h4 {
 }
 @media screen and (max-width: 568px) {
   .showmobile { display: block !important; }
+  .hidden-mobile { display: none !important; }
   .icon.showmobile { display: inline-block !important; }
 }

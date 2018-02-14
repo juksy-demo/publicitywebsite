@@ -97,7 +97,10 @@ footer .footer-logo svg .st0 {
     top: 40px;
   }
 }
-@media (max-width: 568px) {  
+@media (max-width: 568px) {
+  .creative.bgblack {
+    background-color: #fff;
+  }
   .creative .col-md-3  {
     width: 50%;
     padding: 0;
