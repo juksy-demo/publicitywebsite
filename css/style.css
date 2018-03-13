@@ -68,7 +68,8 @@ h6 {
   color: #1a1a1a;
   line-height: 1.5;
   margin: 0 0 30px 0;
-  font-weight: normal; }
+  font-weight: normal;
+  cursor: default; }
 
 h1,
 h2 {
@@ -83,6 +84,7 @@ h6 {
   letter-spacing: 1px; }
 
 a {
+  cursor: pointer;
   text-decoration: none !important; }
 
 a:hover,
@@ -103,7 +105,11 @@ img {
 p {
   margin: 0 0 30px;
   line-height: 2;
-  color: #7e7e7e; }
+  color: #7e7e7e;
+  cursor: default; }
+
+span, .desc {
+  cursor: default; }
 
 hr {
   margin-top: 0px;
@@ -893,7 +899,8 @@ footer .footer-logo svg .st0 {
   #products h2 {
     left: -20px; }
   #products .portfolio-with-title .portfolio-title h4, #products .portfolio-with-title .portfolio-title a, #products .portfolio-with-title .portfolio-title p {
-    font-size: 15px; }
+    font-size: 15px;
+    cursor: pointer; }
   #products .portfolio-with-title .portfolio-title h4 {
     font-size: 20px;
     color: #1a1a1a; }
@@ -2009,6 +2016,14 @@ youtube video
     margin-left: auto; }
 
 @media screen and (min-width: 767px) {
+  #partner .clients.grid-7 li {
+    width: 20%;
+    height: 120px;
+    padding: 20px 0; }
+    #partner .clients.grid-7 li img {
+      width: auto; } }
+
+@media screen and (min-width: 1200px) {
   #partner .clients.grid-7 li {
     width: 14.28%;
     height: 120px;

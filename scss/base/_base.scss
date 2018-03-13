@@ -21,7 +21,8 @@ h6 {
   color: #1a1a1a;
   line-height: 1.5;
   margin: 0 0 30px 0;
-  font-weight: normal; }
+  font-weight: normal;
+  cursor: default; }
 
 h1,
 h2 {
@@ -36,6 +37,7 @@ h6 {
   letter-spacing: 1px; }
 
 a {
+  cursor: pointer;
   text-decoration: none !important; }
 
 a:hover,
@@ -57,7 +59,12 @@ img {
 p {
   margin: 0 0 30px;
   line-height: 2;
-  color: #7e7e7e; }
+  color: #7e7e7e;
+  cursor: default; }
+
+span, .desc {
+  cursor: default;
+}
 
 hr {
   margin-top: 0px;

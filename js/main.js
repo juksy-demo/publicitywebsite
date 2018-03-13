@@ -48,6 +48,7 @@ var wow = new WOW(
     boxClass:     'wow',      
     animateClass: 'animated',
     offset:       0,
+    mobile:       false,
     callback:     function(box) {
       $('#number1').jQuerySimpleCounter({end: 4000,duration: 2500});
       $('#number2').jQuerySimpleCounter({end: 20,duration: 2500});

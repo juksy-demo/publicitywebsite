@@ -20,6 +20,20 @@
     #partner {
         .clients.grid-7 {
             li {
+                width: 20%;
+                height: 120px;
+                padding: 20px 0;
+                img {
+                    width: auto;
+                }
+            }        
+        }
+    }
+}
+@media screen and  (min-width: 1200px) {
+    #partner {
+        .clients.grid-7 {
+            li {
                 width: 14.28%;
                 height: 120px;
                 padding: 20px 0;
