@@ -42,7 +42,7 @@
 	            // mobile don't active
 	            if ($window.width() < 1024) return;
 	            // 靜音
-	            e.target.mute();
+	            // e.target.mute();
 	            // set video high quality
 	            e.target.setPlaybackQuality('hd1080');
 	          }

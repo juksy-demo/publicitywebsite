@@ -198,7 +198,9 @@ h4 {
       max-width: 70px;
       right: -70px; }
   h3 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .wow {
+    animation-delay: 0s !important; } }
 
 @media screen and (max-width: 568px) {
   .showmobile {
@@ -2015,7 +2017,7 @@ youtube video
     margin-right: auto;
     margin-left: auto; }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 769px) {
   #partner .clients.grid-7 li {
     width: 20%;
     height: 120px;
@@ -2056,7 +2058,14 @@ youtube video
   line-height: 2;
   width: 160px;
   margin: 0 auto;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
+  #contactus button.contactus {
+    margin-right: 10px; }
+
+@media (max-width: 375px) {
+  #contactus button.recruitment {
+    margin-top: 15px; } }
 
 /*==============================================
  Video Parallax

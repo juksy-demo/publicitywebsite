@@ -2634,8 +2634,35 @@ dl.toggle.time-line:before {
     }
     .kol-top .col-md-3,
     .kol-bottom .col-md-3 {
+        width: 50%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .kol-top .col-md-3:nth-child(odd),
+    .kol-bottom .col-md-3:nth-child(odd) {
+        padding-right: 18px;
+    }
+    .kol-top .col-md-3:nth-child(even),
+    .kol-bottom .col-md-3:nth-child(even) {
+        padding-left: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .kol-bottom, .kol-top {
+        display: block;
+    }
+    .kol-top .col-md-3,
+    .kol-bottom .col-md-3 {
         width: 70%;
         margin: 0 auto;
+        padding: 0;
+    }
+    .kol-top .col-md-3:nth-child(odd),
+    .kol-top .col-md-3:nth-child(even),
+    .kol-bottom .col-md-3:nth-child(odd),
+    .kol-bottom .col-md-3:nth-child(even) {
+        padding: 0;
     }
 }
 

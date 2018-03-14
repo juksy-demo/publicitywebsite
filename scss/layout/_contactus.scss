@@ -33,5 +33,14 @@
         width: 160px;
         margin: 0 auto;
         cursor: pointer;
+        outline: none;
+        &.contactus {
+            margin-right: 10px;
+        }
+    }
+    @media (max-width: 375px) {
+        button.recruitment {
+            margin-top: 15px;
+        }
     }
 }
