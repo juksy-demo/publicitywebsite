@@ -44,6 +44,38 @@
   width: 58px;
   height: 50px;
 }
+
+.social-icon {
+  background:url("../img/icon/social.png");
+  display:inline-block;
+  height:32px;
+  width:32px;
+  padding: 0;
+  margin: 0 5px;
+  outline: none;
+  border: 0;
+  &.fb {
+    background-position: 0 0;
+  }
+  &.youtube {
+    background-position: 0 -32px;
+  }
+  &.weibo {
+    background-position: -32px 0;
+  }
+  &.ig {
+    background-position: -32px -32px;
+  }
+  &.meipai {
+    background-position: 0 -64px;
+  }
+  &:first-of-type {
+    margin: 0 5px 0 0;
+  }
+  &:last-of-type {
+    margin: 0 0 0 5px;
+  }
+}
 @media (max-width: 568px) {
   .icon-layers:before {
     width: 25px;

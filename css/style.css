@@ -635,6 +635,11 @@ h4 {
       color: #1a1a1a; }
   .team-title p {
     font-size: 15px; }
+  .team-title span {
+    font-size: 12px;
+    display: block;
+    line-height: 24px;
+    padding-bottom: 5px; }
 
 .featured-item .number svg {
   width: 150px;
@@ -964,6 +969,30 @@ footer .footer-logo svg .st0 {
   background-size: cover;
   width: 58px;
   height: 50px; }
+
+.social-icon {
+  background: url("../img/icon/social.png");
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  padding: 0;
+  margin: 0 5px;
+  outline: none;
+  border: 0; }
+  .social-icon.fb {
+    background-position: 0 0; }
+  .social-icon.youtube {
+    background-position: 0 -32px; }
+  .social-icon.weibo {
+    background-position: -32px 0; }
+  .social-icon.ig {
+    background-position: -32px -32px; }
+  .social-icon.meipai {
+    background-position: 0 -64px; }
+  .social-icon:first-of-type {
+    margin: 0 5px 0 0; }
+  .social-icon:last-of-type {
+    margin: 0 0 0 5px; }
 
 @media (max-width: 568px) {
   .icon-layers:before {

@@ -2615,10 +2615,15 @@ dl.toggle.time-line:before {
     display: flex;
     margin-bottom: 20px;
 }
+.kol-middle {
+    display: flex;
+    margin-bottom: 20px;
+}
 .kol-bottom {
     display: flex;
 }
 .kol-top .col-md-3,
+.kol-middle .col-md-3,
 .kol-bottom .col-md-3 {
     flex: 1;
     position: relative;
@@ -2629,37 +2634,50 @@ dl.toggle.time-line:before {
     padding: 20px 30px 0 30px;
 }
 @media screen and (max-width: 1024px) {
-    .kol-bottom, .kol-top {
+    .kol-bottom, .kol-middle, .kol-top {
         display: block;
+        margin-bottom:0;
     }
     .kol-top .col-md-3,
+    .kol-middle .col-md-3,
     .kol-bottom .col-md-3 {
-        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        width: 49.5%;
         margin: 0;
         box-sizing: border-box;
     }
     .kol-top .col-md-3:nth-child(odd),
+    .kol-middle .col-md-3:nth-child(odd),
     .kol-bottom .col-md-3:nth-child(odd) {
         padding-right: 18px;
     }
     .kol-top .col-md-3:nth-child(even),
+    .kol-middle .col-md-3:nth-child(even),
     .kol-bottom .col-md-3:nth-child(even) {
         padding-left: 18px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .kol-bottom, .kol-top {
+    .kol-bottom, .kol-middle, .kol-top {
         display: block;
     }
     .kol-top .col-md-3,
+    .kol-middle .col-md-3,
     .kol-bottom .col-md-3 {
+        display: block;
         width: 70%;
-        margin: 0 auto;
+        margin: 0 auto 15px auto;
         padding: 0;
+    }
+    .kol-bottom .col-md-3:last-child {
+        margin: 0 auto;
     }
     .kol-top .col-md-3:nth-child(odd),
     .kol-top .col-md-3:nth-child(even),
+    .kol-middle .col-md-3:nth-child(odd),
+    .kol-middle .col-md-3:nth-child(even),
     .kol-bottom .col-md-3:nth-child(odd),
     .kol-bottom .col-md-3:nth-child(even) {
         padding: 0;
@@ -2679,7 +2697,6 @@ dl.toggle.time-line:before {
 .team-member .team-img img {
     width: 100%;
     height: auto;
-    cursor: pointer;
     border: 0;
     background-color: rbga(0,0,0,0);
     -webkit-transition: background-color 0.3s ease;
