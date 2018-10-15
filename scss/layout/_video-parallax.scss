@@ -35,7 +35,17 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
+// 騰訊播放器
+#video_qq_player {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.5%;
+}
+#video_qq_player .tenvideo_player {
+  position: absolute;
+}
+@media screen and (max-width: 1280px) {
   .videoWrapper {
     display: none;
   }
