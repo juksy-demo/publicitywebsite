@@ -1704,89 +1704,53 @@ youtube video
   .l-navbar_s-left .container,
   .l-navbar_s-left .container-fluid,
   .l-navbar_s-left .col-lg-1,
-  .l-navbar_s-left
-  .col-md-1,
-  .l-navbar_s-left
-  .col-sm-1,
-  .l-navbar_s-left
-  .col-xs-1,
+  .l-navbar_s-left .col-md-1,
+  .l-navbar_s-left .col-sm-1,
+  .l-navbar_s-left .col-xs-1,
   .l-navbar_s-left .col-lg-2,
-  .l-navbar_s-left
-  .col-md-2,
-  .l-navbar_s-left
-  .col-sm-2,
-  .l-navbar_s-left
-  .col-xs-2,
+  .l-navbar_s-left .col-md-2,
+  .l-navbar_s-left .col-sm-2,
+  .l-navbar_s-left .col-xs-2,
   .l-navbar_s-left .col-lg-3,
-  .l-navbar_s-left
-  .col-md-3,
-  .l-navbar_s-left
-  .col-sm-3,
-  .l-navbar_s-left
-  .col-xs-3,
+  .l-navbar_s-left .col-md-3,
+  .l-navbar_s-left .col-sm-3,
+  .l-navbar_s-left .col-xs-3,
   .l-navbar_s-left .col-lg-4,
-  .l-navbar_s-left
-  .col-md-4,
-  .l-navbar_s-left
-  .col-sm-4,
-  .l-navbar_s-left
-  .col-xs-4,
+  .l-navbar_s-left .col-md-4,
+  .l-navbar_s-left .col-sm-4,
+  .l-navbar_s-left .col-xs-4,
   .l-navbar_s-left .col-lg-5,
-  .l-navbar_s-left
-  .col-md-5,
-  .l-navbar_s-left
-  .col-sm-5,
-  .l-navbar_s-left
-  .col-xs-5,
+  .l-navbar_s-left .col-md-5,
+  .l-navbar_s-left .col-sm-5,
+  .l-navbar_s-left .col-xs-5,
   .l-navbar_s-left .col-lg-6,
-  .l-navbar_s-left
-  .col-md-6,
-  .l-navbar_s-left
-  .col-sm-6,
-  .l-navbar_s-left
-  .col-xs-6,
+  .l-navbar_s-left .col-md-6,
+  .l-navbar_s-left .col-sm-6,
+  .l-navbar_s-left .col-xs-6,
   .l-navbar_s-left .col-lg-7,
-  .l-navbar_s-left
-  .col-md-7,
-  .l-navbar_s-left
-  .col-sm-7,
-  .l-navbar_s-left
-  .col-xs-7,
+  .l-navbar_s-left .col-md-7,
+  .l-navbar_s-left .col-sm-7,
+  .l-navbar_s-left .col-xs-7,
   .l-navbar_s-left .col-lg-8,
-  .l-navbar_s-left
-  .col-md-8,
-  .l-navbar_s-left
-  .col-sm-8,
-  .l-navbar_s-left
-  .col-xs-8,
+  .l-navbar_s-left .col-md-8,
+  .l-navbar_s-left .col-sm-8,
+  .l-navbar_s-left .col-xs-8,
   .l-navbar_s-left .col-lg-9,
-  .l-navbar_s-left
-  .col-md-9,
-  .l-navbar_s-left
-  .col-sm-9,
-  .l-navbar_s-left
-  .col-xs-9,
+  .l-navbar_s-left .col-md-9,
+  .l-navbar_s-left .col-sm-9,
+  .l-navbar_s-left .col-xs-9,
   .l-navbar_s-left .col-lg-10,
-  .l-navbar_s-left
-  .col-md-10,
-  .l-navbar_s-left
-  .col-sm-10,
-  .l-navbar_s-left
-  .col-xs-10,
+  .l-navbar_s-left .col-md-10,
+  .l-navbar_s-left .col-sm-10,
+  .l-navbar_s-left .col-xs-10,
   .l-navbar_s-left .col-lg-11,
-  .l-navbar_s-left
-  .col-md-11,
-  .l-navbar_s-left
-  .col-sm-11,
-  .l-navbar_s-left
-  .col-xs-11,
+  .l-navbar_s-left .col-md-11,
+  .l-navbar_s-left .col-sm-11,
+  .l-navbar_s-left .col-xs-11,
   .l-navbar_s-left .col-lg-12,
-  .l-navbar_s-left
-  .col-md-12,
-  .l-navbar_s-left
-  .col-sm-12,
-  .l-navbar_s-left
-  .col-xs-12,
+  .l-navbar_s-left .col-md-12,
+  .l-navbar_s-left .col-sm-12,
+  .l-navbar_s-left .col-xs-12,
   .l-navbar_s-left .col-lg-1,
   .l-navbar_s-left .col-md-1,
   .l-navbar_s-left .col-sm-1,
@@ -2910,8 +2874,7 @@ youtube video
     padding: 5px;
     font-size: 6px; }
   /**/
-  .count-down .c-grid,
-  .count-down-alt .c-grid {
+  .count-down .c-grid, .count-down-alt .c-grid {
     height: 70px;
     padding-top: 5px;
     width: 40%; }
